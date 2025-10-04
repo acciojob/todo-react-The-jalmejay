@@ -1,0 +1,7 @@
+.list{
+display:flex;
+justify-context:space-between;
+}
+.deleteBtn{
+padding:5px 10px;  
+}
