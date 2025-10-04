@@ -1,5 +1,5 @@
 import React from "react";
-import './../styles/App.css';
+import './app.css';
 
 const Todo = ({ list, deleteId }) => {
   return (
