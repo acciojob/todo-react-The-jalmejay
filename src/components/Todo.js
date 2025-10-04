@@ -3,14 +3,14 @@ import './app.css';
 
 const Todo = ({ list, deleteId }) => {
   return (
-    <div className="todoLists">
+    <ul className="todoLists">
       {list && list.map((e) => (
-        <div key={e.id}  className="list">
+        <li key={e.id}  className="list">
           <p>{e.name}</p>
           <button className="deleteBtn" onClick={() => deleteId(e.id)}>Delete</button>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 
