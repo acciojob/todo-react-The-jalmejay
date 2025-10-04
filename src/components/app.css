@@ -1,11 +1,15 @@
-.todoLists{
-list-style-type: none;
+h1 {
+  text-align: center;
 }
-.list{
-display:flex;
-justify-context:space-between;
-width:200px;
+.todoLists {
+  list-style-type: none;
 }
-.deleteBtn{
-padding:5px 10px;  
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  height: 30px;
+}
+.deleteBtn {
+  padding: 5px 5px;
 }
