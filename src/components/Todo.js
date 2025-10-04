@@ -1,19 +1,16 @@
 import React from "react";
 
-const Todo (props)=>{
-  const [list,deleteId]=props;
-  
-  return(<div>
-    {
-      list&&lsit.map((e)=>{
-    return (
-      <div>
-    <p>{e.name}</p>
-                     <button onClick={deleteId(e.id)}>Delete</button>
+const Todo = ({ list, deleteId }) => {
+  return (
+    <div>
+      {list && list.map((e) => (
+        <div key={e.id} style={{ display: "flex", gap: "10px", marginBottom: "8px" }}>
+          <p style={{ margin: 0 }}>{e.name}</p>
+          <button onClick={() => deleteId(e.id)}>Delete</button>
+        </div>
+      ))}
     </div>
-    )
-    });
-    }
-    </div>)
+  );
 };
+
 export default Todo;
