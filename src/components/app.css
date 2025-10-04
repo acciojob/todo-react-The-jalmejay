@@ -1,6 +1,10 @@
+.todoLists{
+list-style-type: none;
+}
 .list{
 display:flex;
 justify-context:space-between;
+width:200px;
 }
 .deleteBtn{
 padding:5px 10px;  
