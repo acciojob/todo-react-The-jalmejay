@@ -7,7 +7,7 @@ const Todo = ({ list, deleteId }) => {
       {list && list.map((e) => (
         <div key={e.id}  className="list">
           <p>{e.name}</p>
-          <button class="deleteBtn" onClick={() => deleteId(e.id)}>Delete</button>
+          <button className="deleteBtn" onClick={() => deleteId(e.id)}>Delete</button>
         </div>
       ))}
     </div>
